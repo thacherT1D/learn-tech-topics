@@ -1,2 +1,5 @@
 Next:
-Setup eslint
+[ X ] Setup eslint (with rallycoding)
+[  ] Using Prettier with eslint
+
+<a></a>
