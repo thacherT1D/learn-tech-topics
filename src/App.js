@@ -30,8 +30,8 @@ export default class App extends React.Component {
           <Provider store={createStore(reducers)}>
             <View style={styles.container}>
               <Text>This is text in your App.js file!</Text>
-              <LibraryList />
             </View>
+            <LibraryList />
           </Provider>
         </Content>
       </Container>
