@@ -1,5 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
 import {
   Container,
   Header,
@@ -10,9 +13,7 @@ import {
   Content,
   Button,
   Text } from 'native-base';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './reducers';
+  import LibraryList from './components/LibraryList';
 
 export default class App extends React.Component {
   render() {
@@ -28,7 +29,8 @@ export default class App extends React.Component {
         <Content padder>
           <Provider store={createStore(reducers)}>
             <View style={styles.container}>
-              <Text>Open up App.js to start working on your app!</Text>
+              <Text>This is text in your App.js file!</Text>
+              <LibraryList />
             </View>
           </Provider>
         </Content>
