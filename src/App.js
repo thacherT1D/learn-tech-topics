@@ -20,7 +20,7 @@ export default class App extends React.Component {
     return (
       <Container>
       <Header>
-        <Left/>
+        <Left />
         <Body>
           <Title>Learn Tech</Title>
         </Body>
@@ -28,9 +28,6 @@ export default class App extends React.Component {
       </Header>
         <Content padder>
           <Provider store={createStore(reducers)}>
-            <View style={styles.container}>
-              <Text>This is text in your App.js file!</Text>
-            </View>
             <LibraryList />
           </Provider>
         </Content>

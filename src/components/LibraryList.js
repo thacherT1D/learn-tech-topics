@@ -17,12 +17,12 @@ class LibraryList extends Component {
         renderItem={this.renderItem}
         keyExtractor={(library) => library.id}
         />
-        <Accordion dataArray={this.props.libraries} expanded={0} />
       </View>
 
     );
   }
 }
+// <Accordion dataArray={this.props.libraries} expanded={0} />
 
 const mapStateToProps = state => {
   return { libraries: state.libraries };
